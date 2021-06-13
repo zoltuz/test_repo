@@ -13,7 +13,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
     - name: Install dependencies
-      run: pip install -r requirements-ci.txt
+      run: pip install -r flake8
     - name: Run flake8 linter
       run: |
         mkdir -p ./linter_output
