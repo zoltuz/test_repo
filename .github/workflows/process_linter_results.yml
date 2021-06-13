@@ -48,6 +48,7 @@ jobs:
             --exit-zero \
             --no-request-changes \
             --use-checks \
+            --no-post-status
             --commit-sha="$(cat ./head_sha)"
         env:
           LINTLY_API_KEY: ${{ secrets.GITHUB_TOKEN }}
