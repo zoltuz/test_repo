@@ -45,9 +45,8 @@ jobs:
           cat ./flake8.out | lintly --use-checks \
             --fail-on new \
             --pr="$(cat ./pr_number)" \
-            --no-exit-zero \
+            --exit-zero \
             --no-request-changes \
-            --use-checks \
             --commit-sha="$(cat ./head_sha)"
         env:
           LINTLY_API_KEY: ${{ secrets.GITHUB_TOKEN }}
