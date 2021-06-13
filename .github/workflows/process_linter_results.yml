@@ -46,7 +46,6 @@ jobs:
             --fail-on new \
             --pr="$(cat ./pr_number)" \
             --exit-zero \
-            --no-request-changes \
             --no-post-status \
             --commit-sha="$(cat ./head_sha)"
         env:
