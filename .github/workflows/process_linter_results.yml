@@ -47,7 +47,6 @@ jobs:
             --pr="$(cat ./pr_number)" \
             --exit-zero \
             --no-request-changes \
-            --use-checks \
             --no-post-status \
             --commit-sha="$(cat ./head_sha)"
         env:
