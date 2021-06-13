@@ -25,6 +25,6 @@ jobs:
     - name: Install dependencies
       run: pip install flake8 lintly
     - name: Lint with flake8
-      run: flake8 | lintly  --exit-zero
+      run: flake8 | lintly  --exit-zero --no-request-changes
       env:
         LINTLY_API_KEY: ${{ secrets.GITHUB_TOKEN }}
